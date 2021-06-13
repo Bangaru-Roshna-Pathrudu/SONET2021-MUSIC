@@ -7,11 +7,21 @@
     <title>Just Music Things</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styling.css">
+    <style>
+        .modal {
+            background-image: url(pictures/bg3.png);
+        }
+        .modal-content {
+            background-image: url(pictures/bg4.jpg);
+        }
+        img:hover {
+            opacity: 0.75;
+        }
+    </style>
 </head>
 <body style="background-image: url(pictures/bg2.jpg);">
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3319a8;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,14 +45,25 @@
             </ul>
         </div>
         </nav>
-        <div class="jumbotron jumbotron-fluid bg-success text-light">
+        <div class="jumbotron jumbotron-fluid" style=" color: white; background-color: #fa6305;">
             <div class="container">
                 <h1>Keyboard Instruments</h1>
             </div>
         </div>
+        <br><br>
+        <div class="row">
+            <div class="col-sm-10">
+            <h2>About</h2>
+            <p>
+                From the earliest organs to the modern piano, keyboard instruments can produce a great variety of sound. With their wide range of notes, keyboards can match a  whole orchestra but they have also inspired composers to write the most intimate solo pieces. The piano has become an icon of Western music and no other instrument has proved as versatile or as influential.
+            </p>
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <br><br>
         <div class="row">
             <div class="thumbnail">
-                <img src="pictures/key_piano.jpg" class="img-thumbnail bg-dark" alt="piano">
+                <img src="pictures/key_piano.jpg" class="img-thumbnail bg-dark" alt="piano" data-toggle="modal" data-target="#pianoModal">
                 <div class="caption text-center text-dark">
                     <h4>Piano</h4>
                 </div>
@@ -51,7 +72,7 @@
         <div class="row">
             <div class="col-sm-7">
                 <div class="thumbnail">
-                    <img src="pictures/key_harpsichord.jpg" class="img-thumbnail bg-dark" alt="harpsichord">
+                    <img src="pictures/key_harpsichord.jpg" class="img-thumbnail bg-dark" alt="harpsichord" data-toggle="modal" data-target="#harpsichordModal">
                     <div class="caption text-center text-dark">
                         <h4>Harpsichord</h4>
                     </div>
@@ -61,10 +82,64 @@
         </div>
         <div class="row">
             <div class="thumbnail">
-                <img src="pictures/key_organ.jpg" class="img-thumbnail bg-dark" alt="organ">
+                <img src="pictures/key_organ.jpg" class="img-thumbnail bg-dark" alt="organ" data-toggle="modal" data-target="#organModal">
                 <div class="caption text-center text-dark">
                     <h4>Organ</h4>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="pianoModal" tabindex="-1" role="dialog" aria-labelledby="pianoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="pianoLabel">Piano</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>
+                        The piano has the widest range of notes of any instrument, covering more than seven octaves. The word "piano" is short for pianoforte, meaning that the instrument can be played softer (what a musician would call "piano") or louder (known as "forte") in response to the player's touch on the keyboard. When a key is pressed on the keyboard, it moves a felt-covered hammer that strikes a steel string, making it vibrate to produce a sound. The piano is a versatile instrument and is played in all types of music, including classical, popular, and jazz.
+                    </strong></p>
+                </div>
+                <div class="modal-footer d-none"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="harpsichordModal" tabindex="-1" role="dialog" aria-labelledby="harpsichordLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="harpsichordLabel">Harpsichord</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>
+                        The harpsichord was a popular solo and accompanying instrument in Europe in the 16th and 17th centuries (the Baroque period), after which the piano took its place. The strings of harpsichord are plucked, unlike piano strings that are hit with small hammers. When a key is pressed down a small piece of quill or plastic (the plectrum) plucks a string to sound the note. The note is then "damped" or stopped by a piece of cloth or felt when the key is released. Unlike the piano, the notes of a harpsichord are sounded at the same volume however lightly or heavily a key is pressed.
+                    </strong></p>
+                </div>
+                <div class="modal-footer d-none"></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="organModal" tabindex="-1" role="dialog" aria-labelledby="organLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="organLabel">Organ</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p><strong>
+                        The organ is the erliest keyboard instrument. Used in churches for centuries, it can also be played as a concert instrument in both classical and popular music. It works in a similar way to woodwind and brass instruments. Air is blown to produce sound. There are three main parts of an organ: the pipes, the bellows, and the controls. The pipes differ in size and shape to make different sounds. The keyboard controls different rows of pipes and each pipe produces a different note.
+                    </strong></p>
+                </div>
+                <div class="modal-footer d-none"></div>
             </div>
         </div>
     </div>
