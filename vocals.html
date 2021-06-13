@@ -7,11 +7,30 @@
     <title>Just Music Things</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styling.css">
+    <style>
+        .male{
+            background-color: #00a32e;
+        }
+        .female{
+            background-color: #fa115b;
+        }
+        .mbar{
+            background-color: #00ed43;
+        }
+        .fembar{
+            background-color: #f5a2bc;
+        }
+        .mlist{
+            background-color: #00ff48;
+        }
+        .femlist{
+            background-color: #f5bacc;
+        }
+    </style>
 </head>
 <body style="background-image: url(pictures/bg2.jpg);">
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3319a8;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -36,7 +55,7 @@
         </div>
         </nav>
         <br><br>
-        <div class="jumbotron jumbotron-fluid bg-danger text-light">
+        <div class="jumbotron jumbotron-fluid text-light" style="background-color: #004514;">
             <div class="container">
                 <h1>Male Voice Types</h1>
             </div>
@@ -44,30 +63,30 @@
 
         <div class="row">
             <div class="col-sm-3">
-                <div class="card bg-warning">
+                <div class="card male">
                     <div class="card-body">
                         <h1>Bass Voice</h1>
                     </div>
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card bg-warning">
+                <div class="card male">
                     <div class="card-body">
                         <h1>Baritone Voice</h1>
                     </div>
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card bg-warning">
+                <div class="card male">
                     <div class="card-body">
                         <h1>Tenor Voice</h1>
                     </div>
                 </div>
             </div>
             <div class="col-sm-3">
-                <div class="card bg-warning">
+                <div class="card male">
                     <div class="card-body">
-                        <h1>Countertenor Voice</h1>
+                        <h2>Countertenor Voice</h2>
                     </div>
                 </div>
             </div>
@@ -75,7 +94,7 @@
             <br><br>
             <h4>Here are more details...</h4>
             <br>
-        <div class="row border bg-white">
+        <div class="row border mbar">
         <ul class="nav nav-tabs">
             <li class="nav-item">
               <a class="nav-link active" data-toggle="tab" href="#bass">Bass Voice</a>
@@ -102,9 +121,9 @@
                     Here are a couple examples of popular basses:
                 </p>
                 <ul class="list-group">
-                    <li class="list-group-item">Johnny Cash</li>
-                    <li class="list-group-item">Barry White</li>
-                    <li class="list-group-item">Bing Crosby</li>
+                    <li class="list-group-item mlist">Johnny Cash</li>
+                    <li class="list-group-item mlist">Barry White</li>
+                    <li class="list-group-item mlist">Bing Crosby</li>
                 </ul>
             </div>
             <div class="tab-pane container fade" id="baritone">
@@ -116,9 +135,9 @@
                     Here are some examples:
                 </p>
                 <ul class="list-group">
-                    <li class="list-group-item">John Legend</li>
-                    <li class="list-group-item">Hozier</li>
-                    <li class="list-group-item">Michael Buble</li>
+                    <li class="list-group-item mlist">John Legend</li>
+                    <li class="list-group-item mlist">Hozier</li>
+                    <li class="list-group-item mlist">Michael Buble</li>
                 </ul>
             </div>
             <div class="tab-pane container fade" id="tenor">
@@ -133,11 +152,11 @@
                     Here are some Tenors:
                 </p>
                 <ul class="list-group">
-                    <li class="list-group-item">Sam Smith</li>
-                    <li class="list-group-item">Jason Mraz</li>
-                    <li class="list-group-item">Stevie Wonder</li>
-                    <li class="list-group-item">Freddie Mercury</li>
-                    <li class="list-group-item">Michael Jackson</li>
+                    <li class="list-group-item mlist">Sam Smith</li>
+                    <li class="list-group-item mlist">Jason Mraz</li>
+                    <li class="list-group-item mlist">Stevie Wonder</li>
+                    <li class="list-group-item mlist">Freddie Mercury</li>
+                    <li class="list-group-item mlist">Michael Jackson</li>
                 </ul>
                 <br>
             </div>
@@ -158,35 +177,35 @@
           <br><br>
         </div>
             <br><br>
-            <div class="jumbotron jumbotron-fluid bg-success text-light">
+            <div class="jumbotron jumbotron-fluid text-light" style="background-color: #52051e;">
                 <div class="container">
                     <h1>Female Voice Types</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-3">
-                    <div class="card bg-primary">
+                    <div class="card female">
                         <div class="card-body">
                             <h1>Contralto Voice</h1>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <div class="card bg-primary">
+                    <div class="card female">
                         <div class="card-body">
                             <h1>Alto Voice</h1>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <div class="card bg-primary">
+                    <div class="card female">
                         <div class="card-body">
                             <h1>Mezzo Voice</h1>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <div class="card bg-primary">
+                    <div class="card female">
                         <div class="card-body">
                             <h1>Soprano Voice</h1>
                         </div>
@@ -196,7 +215,7 @@
         <br><br>
         <h4>Here are more details...</h4>
         <br>
-        <div class="row border bg-white">
+        <div class="row border fembar">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
                   <a class="nav-link active" data-toggle="tab" href="#contralto">Contralto Voice</a>
@@ -223,9 +242,9 @@
                         Here are a few examples:
                     </p>
                     <ul class="list-group">
-                        <li class="list-group-item">Annie Lennox</li>
-                        <li class="list-group-item">Nina Simone</li>
-                        <li class="list-group-item">Lalah Hathaway</li>
+                        <li class="list-group-item femlist">Annie Lennox</li>
+                        <li class="list-group-item femlist">Nina Simone</li>
+                        <li class="list-group-item femlist">Lalah Hathaway</li>
                     </ul>
                 </div>
                 <div class="tab-pane container active" id="alto">
@@ -238,9 +257,9 @@
                         There have been some terrific alto singers in the last 30 years. Here are a few:
                     </p>
                     <ul class="list-group">
-                        <li class="list-group-item">Tracy Chapman</li>
-                        <li class="list-group-item">Lana Del Rey</li>
-                        <li class="list-group-item">Amy Winehouse</li>
+                        <li class="list-group-item femlist">Tracy Chapman</li>
+                        <li class="list-group-item femlist">Lana Del Rey</li>
+                        <li class="list-group-item femlist">Amy Winehouse</li>
                     </ul>
                 </div>
                 <div class="tab-pane container fade" id="mezzo">
@@ -255,9 +274,9 @@
                         Here are a few famous Mezzo Sopranos:
                     </p>
                     <ul class="list-group">
-                        <li class="list-group-item">Madonna</li>
-                        <li class="list-group-item">Lady Gaga</li>
-                        <li class="list-group-item">Bette Midler</li>
+                        <li class="list-group-item femlist">Madonna</li>
+                        <li class="list-group-item femlist">Lady Gaga</li>
+                        <li class="list-group-item femlist">Bette Midler</li>
                     </ul>
                     <br>
                 </div>
@@ -273,10 +292,10 @@
                         Famous sopranos include:
                     </p>
                     <ul class="list-group">
-                        <li class="list-group-item">Ariana Grande</li>
-                        <li class="list-group-item">Beyonce</li>
-                        <li class="list-group-item">Whitney Houston</li>
-                        <li class="list-group-item">Mariah Carey</li>
+                        <li class="list-group-item femlist">Ariana Grande</li>
+                        <li class="list-group-item femlist">Beyonce</li>
+                        <li class="list-group-item femlist">Whitney Houston</li>
+                        <li class="list-group-item femlist">Mariah Carey</li>
                     </ul>
                 </div>
               </div>
