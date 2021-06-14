@@ -1,7 +1,6 @@
 /*main page*/
-h6 {
+h6.main {
     color: white;
-    font-size: 25px;
 }
 .body-main {
     background-image: url(pictures/bg1.jpg);
@@ -41,10 +40,10 @@ h6 {
 .femlist{
     background-color: #f5bacc;
 }
-.jum-m {
+.jumbotron.jum-m {
     background-color: #004514;
 }
-.jum-f {
+.jumbotron.jum-f {
     background-color: #52051e;
 }
 
@@ -68,6 +67,9 @@ body {
 }
 p {
     font-size: 20px;
+}
+h6 {
+    font-size: 25px;
 }
 .jumbotron {
     font-family: 'Times New Roman', Times, serif;
